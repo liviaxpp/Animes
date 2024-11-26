@@ -1,99 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site de Animes - Descubra seus animes favoritos!">
-    <title>Animes World</title>
+    <title>Site sobre Animes</title>
     <style>
-        body{
-            font-family: Arial,sans-serif;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
         }
-        header{
-            background-color: #1c1c3c;
+        header {
+            background-color: #2c3e50;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
         }
-        nav{
-            margin: 0 auto;
-            padding: 10px;
+        nav {
             text-align: center;
+            margin: 20px 0;
         }
         nav a {
-            color: white;
             margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            color: #3498db;
         }
-        .animes-list{
+        main {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px 0; 
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
-        .animes-item{
-            background-color: white;
+        .anime {
             border: 1px solid #ddd;
-            border-radius: 5px ;
+            border-radius: 8px;
+            background: white;
             width: 300px;
-            margin: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
         }
-        .animes-item img{
+        .anime img {
             width: 100%;
-            border-radius: 5px 5px 0 0;
+            border-radius: 8px 8px 0 0;
         }
-    .animes-item h3 {
-        text-align: center;
-        padding: 10px;
-    }
-    footer {
-        background-color: #1c1c3c;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        position: absolute;
-        width: 100%;
-        bottom: 0; 
-        margin-top: 200px;
-    }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-<header>
-    <h1>Animes World</h1>
+    <header>
+        <h1>Bem-vindo ao Mundo dos Animes</h1>
+        <p>Descubra os melhores animes e personagens incríveis!</p>
+    </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Animes Populares</a>
-        <a href="#">Contatos</a>
-        <a href="#">Sobre</a>
+        <a href="#action">Ação</a>
+        <a href="#romance">Romance</a>
+        <a href="#aventura">Aventura</a>
     </nav>
-</header>
-<main>
-    <section>
-        <h2 style="text-align:center">Animes Populares</h2>;
-        <div class="animes-list">
-        <div class="animes-item">
-            <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto">
+    <main>
+        <div class="anime">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem de Anime 1">
             <h3>Naruto</h3>
+            <p>Um jovem ninja sonha em se tornar o Hokage de sua vila.</p>
         </div>
-        <div class="animes-item">
-             <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Shingeki_no_Kyojin_vol1.jpg" alt="Attack on Titan">
-        <h3>Attack on Titan</h3>
+        <div class="anime">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem de Anime 2">
+            <h3>Attack on Titan</h3>
+            <p>A luta da humanidade contra titãs gigantes.</p>
         </div>
-        <div class="animes-item">
-            <img src="https://pt.wikipedia.org/wiki/One_Piece#/media/Ficheiro:One_Piece_vol._01.jpg" alt="One Piece">
-            <h3>one Piece</h3>
+        <div class="anime">
+            <img src="https://via.placeholder.com/300x200" alt="Imagem de Anime 3">
+            <h3>One Piece</h3>
+            <p>Um pirata busca o lendário tesouro One Piece.</p>
         </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2024 Animes World. Todos os direitos reservados</p>
-</footer>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo dos Animes. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
